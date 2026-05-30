@@ -1455,41 +1455,6 @@
       font-family: 'DM Sans', sans-serif;
     }
 
-    /* ── Contact links ── */
-    .contact-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      opacity: 0;
-      transform: translateY(16px);
-      transition: opacity 0.6s 0.65s, transform 0.6s 0.65s;
-    }
-
-    .contact-links.visible { opacity: 1; transform: translateY(0); }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 11px 18px;
-      border-radius: 10px;
-      border: 1px solid rgba(255,255,255,0.08);
-      background: rgba(255,255,255,0.04);
-      color: rgba(220,235,255,0.8);
-      text-decoration: none;
-      font-size: 0.88rem;
-      font-family: 'DM Sans', sans-serif;
-      transition: transform 0.2s, border-color 0.2s, background 0.2s, color 0.2s;
-    }
-
-    .contact-link:hover {
-      transform: translateY(-3px);
-      border-color: rgba(6,182,212,0.4);
-      background: rgba(6,182,212,0.07);
-      color: #22d3ee;
-    }
-
     /* FOOTER */
     footer {
       position: relative;
@@ -1817,14 +1782,44 @@
         <div class="hero-tags">
           <span class="hero-tag">Python</span>
           <span class="hero-tag">Go</span>
-          <span class="hero-tag">React · TypeScript</span>
+          <span class="hero-tag">React / TypeScript</span>
           <span class="hero-tag">AWS SageMaker</span>
           <span class="hero-tag">Azure ML</span>
-          <span class="hero-tag">LangChain · RAG</span>
+          <span class="hero-tag">LangChain / RAG</span>
           <span class="hero-tag">CrewAI</span>
           <span class="hero-tag">PostgreSQL</span>
-          <span class="hero-tag">Docker · CI/CD</span>
+          <span class="hero-tag">Docker / CI/CD</span>
           <span class="hero-tag">Power BI</span>
+          <span class="hero-tag">FastAPI</span>
+          <span class="hero-tag">Streamlit</span>
+          <span class="hero-tag">n8n</span>
+          <span class="hero-tag">OpenAI API</span>
+          <span class="hero-tag">Google Gemini</span>
+          <span class="hero-tag">Azure AI Foundry</span>
+          <span class="hero-tag">Azure AI Search</span>
+          <span class="hero-tag">Azure Document Intelligence</span>
+          <span class="hero-tag">Amazon Bedrock</span>
+          <span class="hero-tag">Amazon Q</span>
+          <span class="hero-tag">AWS Lambda</span>
+          <span class="hero-tag">API Gateway</span>
+          <span class="hero-tag">AWS Glue</span>
+          <span class="hero-tag">Step Functions</span>
+          <span class="hero-tag">Amazon S3</span>
+          <span class="hero-tag">Amazon ECR</span>
+          <span class="hero-tag">Terraform</span>
+          <span class="hero-tag">Azure DevOps</span>
+          <span class="hero-tag">GitHub Actions</span>
+          <span class="hero-tag">Kubernetes</span>
+          <span class="hero-tag">ASP.NET Core</span>
+          <span class="hero-tag">Angular</span>
+          <span class="hero-tag">Node.js</span>
+          <span class="hero-tag">Scikit-learn</span>
+          <span class="hero-tag">Pandas</span>
+          <span class="hero-tag">SQL Server</span>
+          <span class="hero-tag">MongoDB</span>
+          <span class="hero-tag">Redis</span>
+          <span class="hero-tag">Postman</span>
+          <span class="hero-tag">REST APIs</span>
         </div>
 
         <div class="hero-actions">
@@ -3490,22 +3485,16 @@
       <div class="contact-ctas">
         <a class="contact-cta-primary" href="mailto:sadia.butex38@gmail.com">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
-          Send an Email
+          Email Sadia
         </a>
-        <a class="contact-cta-secondary" href="https://www.linkedin.com/in/sadia-islam-792130129/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="contact-cta-secondary" href="https://github.com/Sadia-Isla" target="_blank" rel="noopener">GitHub</a>
+        <a class="contact-cta-secondary" href="https://www.linkedin.com/in/sadia-islam-792130129/" target="_blank" rel="noopener">LinkedIn Profile</a>
+        <a class="contact-cta-secondary" href="https://github.com/Sadia-Isla" target="_blank" rel="noopener">GitHub Portfolio</a>
       </div>
       <div class="contact-badges">
-        <span class="contact-badge">📍 Ottawa, ON</span>
-        <span class="contact-badge">🇨🇦 Canadian Citizen</span>
-        <span class="contact-badge">🔒 Reliability Status</span>
-        <span class="contact-badge">📞 613-327-5004</span>
-      </div>
-      <div class="contact-links">
-        <a class="contact-link" href="mailto:sadia.butex38@gmail.com">sadia.butex38@gmail.com</a>
-        <a class="contact-link" href="tel:6133275004">613-327-5004</a>
-        <a class="contact-link" href="https://www.linkedin.com/in/sadia-islam-792130129/" target="_blank">LinkedIn →</a>
-        <a class="contact-link" href="https://github.com/Sadia-Isla" target="_blank">GitHub →</a>
+        <span class="contact-badge">Ottawa, ON</span>
+        <span class="contact-badge">Canadian Citizen</span>
+        <span class="contact-badge">Reliability Status</span>
+        <span class="contact-badge">Phone: 613-327-5004</span>
       </div>
     </div>
   </section>
@@ -3613,15 +3602,13 @@
             setTimeout(() => w.classList.add('visible'), 100 + i * 80);
           });
 
-          // Sub, ctas, badges, links — cascaded
+          // Sub, ctas, badges - cascaded
           const sub    = contactShell.querySelector('.contact-sub');
           const ctas   = contactShell.querySelector('.contact-ctas');
           const badges = contactShell.querySelector('.contact-badges');
-          const links  = contactShell.querySelector('.contact-links');
           if (sub)    setTimeout(() => sub.classList.add('visible'),    300);
           if (ctas)   setTimeout(() => ctas.classList.add('visible'),   450);
           if (badges) setTimeout(() => badges.classList.add('visible'), 580);
-          if (links)  setTimeout(() => links.classList.add('visible'),  700);
 
           contactObs.unobserve(entry.target);
         });
